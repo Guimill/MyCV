@@ -1,0 +1,83 @@
+{
+    "Experiences": [
+        {
+            "nom": "McDonald's" , 
+            "duree": 1,
+            "intitulé": ,
+            "ville": ,
+            "poste": ,
+        },
+        {
+            "nom": "Museum d'histoire naturelle de Toulouse" , 
+            "duree": 2,
+            "intitulé": ,
+            "ville": ,
+            "poste": ,
+        },
+        {
+            "nom": "Service civique LPO île de ré" , 
+            "duree": 0.3,
+            "intitulé": ,
+            "ville": ,
+            "poste": ,
+        },
+        {
+            "nom": "Artelia Ville et Transport" , 
+            "duree": 0.5,
+            "intitulé": ,
+            "ville": ,
+            "poste": ,
+        },
+        {
+            "nom": "ERT" , 
+            "duree": 0.2,
+            "intitulé": ,
+            "ville": ,
+            "poste": ,
+        },
+        {
+            "nom": "Operis" , 
+            "duree": 0.5,
+            "intitulé": ,
+            "ville": ,
+            "poste": ,
+        }
+    ],
+    "Formations": [
+      {
+        "diplome": ,
+        "intitule": ,
+        "dateAdmission": ,
+        "specialisation": ,
+        "projets": ,
+      },
+      {
+        "diplome": ,
+        "intitule": ,
+        "dateAdmission": ,
+        "specialisation": ,
+        "projets": ,
+      },
+      {
+        "diplome": ,
+        "intitule": ,
+        "dateAdmission": ,
+        "specialisation": ,
+        "projets": ,
+      },
+      {
+        "diplome": ,
+        "intitule": ,
+        "dateAdmission": ,
+        "specialisation": ,
+        "projets": ,
+      },{
+        "diplome": ,
+        "intitule": ,
+        "dateAdmission": ,
+        "specialisation": ,
+        "projets": ,
+      }
+    ]
+  }
+  

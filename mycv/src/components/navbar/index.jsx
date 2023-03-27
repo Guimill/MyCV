@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
 
   const [buttonFormationDisabled, setButtonFormationDisabled] = useState(false);
   const [buttonExperiencesDisabled, setButtonExperiencesDisabled] = useState(false);
@@ -9,20 +9,21 @@ function Navbar() {
 
     return (
             <div class="navbar">
+              <Link to={'formation'}>
               <button disabled={buttonFormationDisabled} 
                   onClick={() => { setButtonFormationDisabled(true); setButtonExperiencesDisabled(false); setButtonRealisationDisabled(false)}}>
                     Formation
-              </button>
+              </button></Link>
+              <Link to={'experiences'}>
               <button disabled={buttonExperiencesDisabled} 
                   onClick={() => { setButtonExperiencesDisabled(true); setButtonRealisationDisabled(false); setButtonFormationDisabled(false)}}>
                     Experiences
-              </button>
+              </button></Link>
+              <Link to={'realisations'}>
               <button disabled={ButtonRealisationDisabled} 
-                  onClick={() => { setButtonRealisationDisabled(true); setButtonExperiencesDisabled(false); setButtonFormationDisabled(false); LinkTo}}>
+                  onClick={() => { setButtonRealisationDisabled(true); setButtonExperiencesDisabled(false); setButtonFormationDisabled(false); }}>
                     Realisations
-              </button>
+              </button></Link>
             </div>
     );
   }
-
-export default Navbar;

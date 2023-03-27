@@ -1,10 +1,8 @@
-function Content() {
+export default function Acceuil() {
 
     return (
             <div class="content">
-              content
+              <h1>Acceuil</h1>
             </div>
     );
   }
-
-export default Content;
