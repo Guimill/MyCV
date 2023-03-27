@@ -59,6 +59,26 @@ body {
 .navbar {
   background-color: rgb(244, 147, 147);
   height: 8vh;
+  display: flex;
+  justify-content: center;
+}
+.navbar button {
+  background-color: rgb(244, 147, 147);
+  color: black;
+  font-family: "jazzy";
+  font-size: 1.5vw;
+  font-weight: bold;
+  border-style: none;
+  width: 15vw;
+}
+.navbar button:hover {
+  background-color: #ef6565;
+}
+.navbar button:disabled {
+  background-color: #ed4e4e;
+}
+.navbar button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 main {
@@ -83,6 +103,8 @@ main {
 }
 
 .footer {
-  background-color: rgb(244, 147, 147);
   height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

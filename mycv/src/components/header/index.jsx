@@ -14,9 +14,9 @@ function Header() {
                         <img src={linkedin} alt="logo de linkedin redirigeant vers mon linkedin"/></a>
                     <a href="mailto:guillaume.milleret@gmail.com">
                         <img src={mail} alt="logo d'une enveloppe contenant mon mail"/></a>
-                </div>        
-            <h1>Milleret Guillaume</h1>               
-            </nav>  
+                </div>             
+                <h1>Milleret Guillaume</h1>    
+            </nav>
         </header>
     );
   }

@@ -63,6 +63,26 @@ body{
 .navbar{
     background-color: $primary-color;
     height: 8vh;
+    display: flex;
+    justify-content: center;
+    button{
+        background-color: $primary-color;
+        color: black;
+        font-family: "jazzy";
+        font-size: 1.5vw;
+        font-weight: bold;
+        border-style: none;
+        width: 15vw;
+        &:hover{
+            background-color: darken($color: $primary-color, $amount: 10%);
+        }
+        &:disabled{
+            background-color: darken($color: $primary-color, $amount: 15%);
+        }
+        &:active{
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
+    }
 }
 
 main{
@@ -88,6 +108,8 @@ main{
 }
 
 .footer{
-    background-color: $primary-color;
     height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
