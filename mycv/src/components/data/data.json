@@ -3,80 +3,85 @@
         {
             "nom": "McDonald's" , 
             "duree": 1,
-            "intitulé": ,
-            "ville": ,
-            "poste": ,
+            "intitulé": "",
+            "ville": "Montaudran",
+            "poste": "Equipier polyvalant"
         },
         {
             "nom": "Museum d'histoire naturelle de Toulouse" , 
             "duree": 2,
-            "intitulé": ,
-            "ville": ,
-            "poste": ,
+            "intitulé": "",
+            "ville": "Toulouse",
+            "poste": "Médiateur scientifique et culturelle"
         },
         {
             "nom": "Service civique LPO île de ré" , 
             "duree": 0.3,
-            "intitulé": ,
-            "ville": ,
-            "poste": ,
+            "intitulé": "",
+            "ville": "Saint-Clément-des-Baleines",
+            "poste": "Chargé de mission biodiversité"
         },
         {
-            "nom": "Artelia Ville et Transport" , 
+            "nom": "Stage Artelia Ville et Transport" , 
             "duree": 0.5,
-            "intitulé": ,
-            "ville": ,
-            "poste": ,
+            "intitulé": "",
+            "ville": "Saint-Herblain",
+            "poste": "Chargé de mission zones humides"
         },
         {
             "nom": "ERT" , 
             "duree": 0.2,
-            "intitulé": ,
-            "ville": ,
-            "poste": ,
+            "intitulé": "",
+            "ville": "Saint-Herblain",
+            "poste": "Dessinateur-projeteur fibre optique"
         },
         {
             "nom": "Operis" , 
             "duree": 0.5,
-            "intitulé": ,
-            "ville": ,
-            "poste": ,
+            "intitulé": "",
+            "ville": "Orvault",
+            "poste": "technicien support logiciel"
         }
     ],
     "Formations": [
       {
-        "diplome": ,
-        "intitule": ,
-        "dateAdmission": ,
-        "specialisation": ,
-        "projets": ,
+        "diplome": "Master GAED: Géographie Aménagement Environnement Développement",
+        "ville": "Angers",
+        "intitule": "",
+        "dateAdmission": "2021",
+        "specialisation": "Ecologie et écoingénirie des zones humides",
+        "projets": ""
       },
       {
-        "diplome": ,
-        "intitule": ,
-        "dateAdmission": ,
-        "specialisation": ,
-        "projets": ,
+        "diplome": "Maîtrise BEE: Biologie Ecologie et Evolution",
+        "ville": "Poitiers",
+        "intitule": "",
+        "dateAdmission": "2020",
+        "specialisation": "",
+        "projets": ""
       },
       {
-        "diplome": ,
-        "intitule": ,
-        "dateAdmission": ,
-        "specialisation": ,
-        "projets": ,
+        "diplome": "Maîtrise GAED: Géographie Aménagement Environnement Développement",
+        "ville": "Poitiers",
+        "intitule": "",
+        "dateAdmission": "2019",
+        "specialisation": "",
+        "projets": ""
       },
       {
-        "diplome": ,
-        "intitule": ,
-        "dateAdmission": ,
-        "specialisation": ,
-        "projets": ,
+        "diplome": "Licence BOPE: Biologie des Organismes, des Populations et Environnement",
+        "ville": "Toulouse",
+        "intitule": "",
+        "dateAdmission": "2018",
+        "specialisation": "",
+        "projets": ""
       },{
-        "diplome": ,
-        "intitule": ,
-        "dateAdmission": ,
-        "specialisation": ,
-        "projets": ,
+        "diplome": "Bac Scientifique",
+        "ville": "Miramas",
+        "intitule": "",
+        "dateAdmission": "2014",
+        "specialisation": "SVT",
+        "projets": ""
       }
     ]
   }
