@@ -4,19 +4,14 @@ import styled from "styled-components";
 export default function Experiences() {
 
 
-  const Content = styled.div`
-  grid-area: 2 / 2 / 7 / 6; 
-  scrollbar-width: none;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  `
-
   const Paragraphe = styled.li`
+  padding-top: 45vh;
+  padding-bottom: 20vh;
   object-fit: cover;
   color: black;
   object-position: center;
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
@@ -27,13 +22,13 @@ export default function Experiences() {
   `
 
     return (
-            <Content>
+            <div>
                 {ExperienceData.map(({ nom, duree, intitule, ville, poste, id }) => (
                   <Paragraphe key={id}>
                     <b>{nom} - {duree} - {ville} </b>
                     <p>{poste} <br />{intitule}</p>
                   </Paragraphe>
                 ))}
-            </Content>
+            </div>
     );
   }

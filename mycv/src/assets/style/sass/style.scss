@@ -10,6 +10,9 @@ $third-color : rgb(204, 235, 246);
 html{
     height: 100vh;
     width: 100vw;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
   
 * {
@@ -18,10 +21,12 @@ html{
 }
 
 body{
-    background-color: $primary-color;
+    width: 100vw;
 }
 
 .banner{
+    top: 0;
+    position: sticky;
     width: 100vw;
     height: 20vh;
     background-color: $secondary-color;
@@ -61,8 +66,10 @@ body{
 }
 
 .navbar{
+    position: fixed;
     background-color: $primary-color;
     height: 8vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     button{
@@ -88,31 +95,24 @@ body{
 
 main{
     background-color: $third-color;
-    height: 72vh;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 20px; 
-    color: #f6f8fa;
+
 }
 
 .progressBar {
+    margin-top: 8vh;
     position: fixed;
-    z-index: 1;
-    width: 100%;
+    width: 120vw;
 }
 
 /* The progress container (grey background) */
 .progress-container {
-  width: 100%;
-  height: 12px;
-  background: darken($color: $secondary-color, $amount: 10%);
+    margin-left: -15vw;
+    width: 120vw;
+    height: 1.5vh;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 12px;
-  background: #04AA6D;
-  width: 0%;
+    height: 1.5vh;
+    background: #04AA6D;
 }

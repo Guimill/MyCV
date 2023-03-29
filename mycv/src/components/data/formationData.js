@@ -5,7 +5,7 @@ export const FormationData = [
       "ville": "Angers",
       "intitule": "",
       "dateAdmission": "2021",
-      "specialisation": "Ecologie et écoingénirie des zones humides",
+      "specialisation": "Ecologie et éco-ingénierie des zones humides",
       "projets": ""
     },
     {
