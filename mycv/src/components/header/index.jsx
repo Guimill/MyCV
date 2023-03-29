@@ -3,7 +3,7 @@ import mail from '../../assets/img/mail.svg'
 import github from '../../assets/img/github.svg'
 import linkedin from '../../assets/img/linkedin.svg'
 
-function Header() {
+export default function Header() {
 
     const linkStyle = {
         textDecoration: "none",
@@ -28,5 +28,3 @@ function Header() {
         </header>
     );
   }
-
-export default Header;

@@ -84,7 +84,7 @@ body {
 
 main {
   background-color: rgb(204, 235, 246);
-  height: 68vh;
+  height: 72vh;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -93,14 +93,22 @@ main {
   color: #f6f8fa;
 }
 
-.sidebar {
-  grid-area: 2/6/7/8;
-  background-color: #a9ddf0;
+.progressBar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
-.footer {
-  height: 4vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: #d5dfe8;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 12px;
+  background: #04AA6D;
+  width: 0%;
 }/*# sourceMappingURL=style.css.map */
