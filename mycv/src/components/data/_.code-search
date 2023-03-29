@@ -1,0 +1,34 @@
+# Query: é
+# ContextLines: 1
+
+14 results - 2 files
+
+mycv\src\components\data\experienceData.js:
+  23              "ville": "Saint-Herblain",
+  24:             "poste": "Chargé de mission zones humides"
+  25          },
+
+  27              "id": 3,
+  28:             "nom": "Service civique LPO île de ré" , 
+  29              "duree": "4 mois",
+  30              "intitule": "",
+  31:             "ville": "Saint-Clément-des-Baleines",
+  32:             "poste": "Chargé de mission biodiversité"
+  33          },
+
+  39              "ville": "Toulouse",
+  40:             "poste": "Médiateur scientifique et culturelle"
+  41          },
+
+mycv\src\components\data\formationData.js:
+   3        "id": 1,
+   4:       "diplome": "Master GAED: Géographie Aménagement Environnement Développement",
+   5        "ville": "Angers",
+
+   7        "dateAdmission": "2021",
+   8:       "specialisation": "Ecologie et éco-ingénierie des zones humides",
+   9        "projets": ""
+
+  21        "id": 3,
+  22:       "diplome": "Maîtrise GAED: Géographie Aménagement Environnement Développement",
+  23        "ville": "Poitiers",

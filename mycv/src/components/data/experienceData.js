@@ -21,15 +21,15 @@ export const ExperienceData = [
             "duree": "7 mois",
             "intitule": "",
             "ville": "Saint-Herblain",
-            "poste": "Chargé de mission zones humides"
+            "poste": "Charge de mission zones humides"
         },
         {
             "id": 3,
-            "nom": "Service civique LPO île de ré" , 
+            "nom": "Service civique LPO ile de re" , 
             "duree": "4 mois",
             "intitule": "",
-            "ville": "Saint-Clément-des-Baleines",
-            "poste": "Chargé de mission biodiversité"
+            "ville": "Saint-Clement-des-Baleines",
+            "poste": "Charge de mission biodiversite"
         },
         {
             "id": 2,
@@ -37,7 +37,7 @@ export const ExperienceData = [
             "duree": "2 ans",
             "intitule": "",
             "ville": "Toulouse",
-            "poste": "Médiateur scientifique et culturelle"
+            "poste": "Mediateur scientifique et culturelle"
         },
         {
             "id": 1,

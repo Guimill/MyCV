@@ -110,4 +110,31 @@ main {
 .progress-bar {
   height: 1.5vh;
   background: #04AA6D;
+}
+
+.paragraphe {
+  padding-top: 45vh;
+  padding-bottom: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: black;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 30vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-family: "jazzy";
+  list-style: none;
+}
+.paragraphe__topParagraphe {
+  color: rgb(244, 147, 147);
+}
+.paragraphe__bottomParagraphe {
+  color: rgb(51, 51, 109);
 }/*# sourceMappingURL=style.css.map */

@@ -1,16 +1,16 @@
 export const FormationData = [
     {
       "id": 1,
-      "diplome": "Master GAED: Géographie Aménagement Environnement Développement",
+      "diplome": "Master GAED: Geographie Amenagement Environnement Developpement",
       "ville": "Angers",
       "intitule": "",
       "dateAdmission": "2021",
-      "specialisation": "Ecologie et éco-ingénierie des zones humides",
+      "specialisation": "Ecologie et eco-ingenierie des zones humides",
       "projets": ""
     },
     {
       "id": 2,
-      "diplome": "Maîtrise BEE: Biologie Ecologie et Evolution",
+      "diplome": "Maitrise BEE: Biologie Ecologie et Evolution",
       "ville": "Poitiers",
       "intitule": "",
       "dateAdmission": "2020",
@@ -19,7 +19,7 @@ export const FormationData = [
     },
     {
       "id": 3,
-      "diplome": "Maîtrise GAED: Géographie Aménagement Environnement Développement",
+      "diplome": "Maitrise GAED: Geographie Amenagement Environnement Developpement",
       "ville": "Poitiers",
       "intitule": "",
       "dateAdmission": "2019",
