@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../components/sidebar';
 
-export default function Acceuil() {
+export default function Home() {
   return (
     <>
     <Header />

@@ -5,16 +5,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './assets/style/css/style.css';
-import Acceuil from './routes/acceuil';
+import Home from './routes/home';
 import Error from './routes/error';
 import Formation from './components/content/formation';
 import Realisations from './components/content/realisations';
 import Experiences from './components/content/experiences';
+import Competences from "./components/content/competences";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Acceuil/>,
+    element: <Home/>,
     errorElement: <Error/>,
     children: [
       {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: "experiences",
         element: <Experiences />,
       },
+      {
+        path: "competences",
+        element: <Competences />,
+      }
     ],
   },
 ]);

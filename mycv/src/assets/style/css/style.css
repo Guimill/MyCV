@@ -110,6 +110,7 @@ main {
 .progress-bar {
   height: 1.5vh;
   background: #04AA6D;
+  border-radius: 15px 15px;
 }
 
 .paragraphe {
@@ -125,16 +126,60 @@ main {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  font-size: 3.5rem;
   font-family: "jazzy";
   list-style: none;
 }
 .paragraphe__topParagraphe {
+  width: 75%;
+  text-align: center;
   color: rgb(244, 147, 147);
+  font-size: 3rem;
 }
 .paragraphe__bottomParagraphe {
   color: rgb(51, 51, 109);
+  font-size: 2rem;
+}
+
+.realisationParagraphe {
+  padding-top: 45vh;
+  padding-bottom: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: black;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 30vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "jazzy";
+  list-style: none;
+}
+
+.downloadHandler {
+  margin-top: 20px;
+  height: 64px;
+  text-align: center;
+}
+.downloadHandler__downloadButton {
+  font-family: "jazzy";
+  border: none;
+  font-size: x-large;
+  padding: 0 55px;
+  margin-top: 5vh;
+  background-color: rgb(244, 147, 147);
+  color: #f6f8fa;
+}
+.downloadHandler__downloadButton:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.downloadHandler__downloadButton:hover {
+  background-color: #ef6565;
 }/*# sourceMappingURL=style.css.map */

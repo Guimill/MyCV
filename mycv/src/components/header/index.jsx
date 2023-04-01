@@ -21,9 +21,9 @@ export default function Header() {
                     <a href="mailto:guillaume.milleret@gmail.com">
                         <img src={mail} alt="logo d'une enveloppe contenant mon mail"/></a>
                 </div>
-                <Link to={'/'} style={linkStyle}>            
+                <Link to={'accueil'} style={linkStyle}>            
                     <h1>Milleret Guillaume</h1>  
-                </Link>   
+                </Link>
             </nav>
         </header>
     );

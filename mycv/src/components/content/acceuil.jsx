@@ -1,8 +1,10 @@
-export default function Acceuil() {
+export default function Accueil() {
 
-    return (
-            <div class="content">
-              <h1>Acceuil</h1>
-            </div>
-    );
-  }
+  return (
+    <div>
+          <ul class="paragraphe">
+            <li class="paragraphe__topParagraphe">Accueil</li>
+          </ul>
+    </div>
+);
+}
