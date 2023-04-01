@@ -1,6 +1,6 @@
 $primary-color : rgb(244, 147, 147);
 $secondary-color : #f6f8fa;
-$third-color : rgb(204, 235, 246);
+$third-color : rgb(227, 252, 255);
 
 @font-face {
     font-family: "jazzy";
@@ -138,11 +138,13 @@ main{
         width: 75%;
         text-align: center;
         color:rgb(244, 147, 147);
-        font-size: 3rem;
+        font-size: 4vh;
     }
     &__bottomParagraphe{
-        color:rgb(51, 51, 109);
-        font-size: 2rem;
+        color:rgb(125, 125, 196);
+        font-size: 2.5vh;
+        text-align: center;
+        width: 65%;
     }
 }
 

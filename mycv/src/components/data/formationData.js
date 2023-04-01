@@ -10,6 +10,7 @@ export const FormationData = [
       "specialisation": "Ecologie et eco-ingenierie des zones humides",
       "projets": "",
       "downloadLink": master,
+      "diplomeName": "Master GAED",
       "size": ""
     },
     {
@@ -21,6 +22,7 @@ export const FormationData = [
       "specialisation": "",
       "projets": "",
       "downloadLink": "",
+      "diplomeName": "Maitrise BEE",
       "size": ""
     },
     {
@@ -32,6 +34,7 @@ export const FormationData = [
       "specialisation": "",
       "projets": "",
       "downloadLink": "",
+      "diplomeName": "Maitrise GAED",
       "size": ""
     },
     {
@@ -43,6 +46,7 @@ export const FormationData = [
       "specialisation": "",
       "projets": "",
       "downloadLink": "",
+      "diplomeName": "Licence",
       "size": ""
     },
     {
@@ -54,6 +58,7 @@ export const FormationData = [
       "specialisation": "SVT",
       "projets": "",
       "downloadLink": "",
+      "diplomeName": "Bac",
       "size": ""
     }
   ]

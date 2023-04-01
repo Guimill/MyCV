@@ -7,7 +7,7 @@ export default function Experiences() {
                 {ExperienceData.map(({ nom, duree, intitule, ville, poste, id }) => (
                   <ul class="paragraphe" key={id}>
                     <li class="paragraphe__topParagraphe">{nom} - {duree} - {ville}</li>
-                    <li class="paragraphe__bottomParagraphe">{poste}{intitule}</li>
+                    <li class="paragraphe__bottomParagraphe"><b style={{color: "burlywood"}} >{poste}</b> <p>{intitule}</p></li>
                   </ul>
                 ))}
             </div>

@@ -90,7 +90,7 @@ body {
 }
 
 main {
-  background-color: rgb(204, 235, 246);
+  background-color: rgb(227, 252, 255);
 }
 
 .progressBar {
@@ -136,11 +136,13 @@ main {
   width: 75%;
   text-align: center;
   color: rgb(244, 147, 147);
-  font-size: 3rem;
+  font-size: 4vh;
 }
 .paragraphe__bottomParagraphe {
-  color: rgb(51, 51, 109);
-  font-size: 2rem;
+  color: rgb(125, 125, 196);
+  font-size: 2.5vh;
+  text-align: center;
+  width: 65%;
 }
 
 .realisationParagraphe {

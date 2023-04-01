@@ -5,12 +5,12 @@ export default function Formation() {
 
   return (
     <div>
-        {FormationData.map(({ projets, diplome, intitule, ville, dateAdmission, specialisation, id, downloadLink }) => (
+        {FormationData.map(({ projets, diplome, intitule, ville, dateAdmission, specialisation, id, downloadLink, diplomeName }) => (
           <ul class="paragraphe" key={id}>
             <li class="paragraphe__topParagraphe">{diplome} - {dateAdmission} - {ville}</li>
             <li class="paragraphe__bottomParagraphe">{specialisation}{intitule}</li>
             <li>{projets}</li>
-            <li><DownloadButton downloadLink={downloadLink}/></li>
+            <li><DownloadButton downloadLink={downloadLink} diplomeName={diplomeName} /></li>
           </ul>
         ))}
     </div>
