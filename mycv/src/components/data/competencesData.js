@@ -11,12 +11,17 @@ export const CompetenceData = [
     },
     {
         "id": 3,
-        "nom": "Statistiques" ,
+        "nom": "Statistique" ,
         "outils": "R Rstudio Python Pandas"
     },
     {
-        "id": 3,
+        "id": 4,
         "nom": "Geomatique" ,
         "outils": "QGIS ArcGis OSM Geoportail Earthdata & divers MapMaker"
+    },
+    {
+        "id": 5,
+        "nom": "Langues" ,
+        "outils": "Anglais C1 italien B1 notion de chinois, arabe et russe"
     },
 ]

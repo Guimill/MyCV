@@ -1,10 +1,9 @@
-
 function Footer() {
 
     return (
         <footer class="footer">
-          <div>
-          </div>
+          <hr />
+          <p>Copyright 2023</p>
         </footer>
     );
   }

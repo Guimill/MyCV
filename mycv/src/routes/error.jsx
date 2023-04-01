@@ -1,7 +1,6 @@
 import { useRouteError } from "react-router-dom";
 import Header from '../components/header'
 import Navbar from '../components/navbar';
-import Footer from '../components/footer';
 
 export default function Error() {
     const error = useRouteError();
@@ -11,12 +10,13 @@ export default function Error() {
     <>
     <Header />
         <Navbar />
-            <main style={{display: "flex", justifyContent: "center" , alignItems: "center", flexFlow: "column", color: "goldenrod"}}>
-                <h1>Oops!</h1>
-                <p>Sorry, an unexpected error has occurred.</p>
-                <i>{error.statusText || error.message}</i>
+            <main>
+                <div className="paragraphe">
+                    <h1>Oops!</h1>
+                    <p>Sorry, an unexpected error has occurred.</p>
+                    <b>{error.statusText || error.message}</b>
+                </div>
             </main>
-        <Footer />
     </>
   );
 }

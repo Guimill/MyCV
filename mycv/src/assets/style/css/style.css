@@ -17,13 +17,14 @@ html {
 
 body {
   width: 100vw;
+  height: 100vh;
 }
 
 .banner {
   top: 0;
   position: sticky;
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   background-color: #f6f8fa;
   display: flex;
   align-items: center;
@@ -37,7 +38,7 @@ body {
 .banner nav h1 {
   display: flex;
   flex-wrap: nowrap;
-  font-size: 5vh;
+  font-size: 3vw;
   font-family: "jazzy";
 }
 .banner nav div {
@@ -52,6 +53,7 @@ body {
   margin-top: 5px;
 }
 .banner nav div a img {
+  margin-top: 0.5vh;
   display: flex;
   flex-flow: column wrap;
   width: 30%;
@@ -62,6 +64,7 @@ body {
 }
 
 .navbar {
+  border: solid 1px black;
   position: fixed;
   background-color: rgb(244, 147, 147);
   height: 8vh;
@@ -73,11 +76,11 @@ body {
   background-color: rgb(244, 147, 147);
   color: black;
   font-family: "jazzy";
-  font-size: 1.5vw;
   font-weight: bold;
   border-style: none;
   width: 15vw;
   height: 8vh;
+  font-size: 3vh;
 }
 .navbar button:hover {
   background-color: #ef6565;
@@ -94,7 +97,7 @@ main {
 }
 
 .progressBar {
-  margin-top: 8vh;
+  margin-top: 8.1vh;
   position: fixed;
   width: 120vw;
 }
@@ -108,6 +111,7 @@ main {
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
+  border: solid 1px black;
   height: 1.5vh;
   background: #04AA6D;
   border-radius: 15px 15px;
@@ -133,7 +137,7 @@ main {
   list-style: none;
 }
 .paragraphe__topParagraphe {
-  width: 75%;
+  width: 50%;
   text-align: center;
   color: rgb(244, 147, 147);
   font-size: 4vh;
@@ -184,4 +188,21 @@ main {
 }
 .downloadHandler__downloadButton:hover {
   background-color: #ef6565;
+}
+
+footer {
+  height: 100%;
+  font-size: 2vh;
+  font-family: "jazzy";
+  background-color: rgb(227, 252, 255);
+  text-align: center;
+}
+footer hr {
+  width: 20%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  background-color: rgb(244, 147, 147);
+  border: 0 none;
 }/*# sourceMappingURL=style.css.map */

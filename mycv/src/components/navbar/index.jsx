@@ -15,22 +15,22 @@ export default function Navbar() {
 
     return (
             <div class="navbar">
-              <Link to={'formation'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
+              <Link to={'/formation'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
               <button disabled={buttonFormationDisabled} 
                   onClick={() => { setButtonFormationDisabled(true); setButtonExperiencesDisabled(false); setButtonRealisationDisabled(false); setButtonCompetencesDisabled(false)}}>
                     Formation
               </button></Link>
-              <Link to={'experiences'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
+              <Link to={'/experiences'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
               <button disabled={buttonExperiencesDisabled} 
                   onClick={() => { setButtonExperiencesDisabled(true); setButtonRealisationDisabled(false); setButtonFormationDisabled(false); setButtonCompetencesDisabled(false)}}>
                     Experiences
               </button></Link>
-              <Link to={'competences'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
+              <Link to={'/competences'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
               <button disabled={ButtonCompetencesDisabled} 
                   onClick={() => { setButtonRealisationDisabled(false); setButtonExperiencesDisabled(false); setButtonFormationDisabled(false); setButtonCompetencesDisabled(true)}}>
                     Competences
               </button></Link>
-              <Link to={'realisations'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
+              <Link to={'/realisations'} onClick={() => {window.scrollTo({top: 0, left: 0})}}>
               <button disabled={ButtonRealisationDisabled} 
                   onClick={() => { setButtonRealisationDisabled(true); setButtonExperiencesDisabled(false); setButtonFormationDisabled(false); setButtonCompetencesDisabled(false)}}>
                     Realisations
