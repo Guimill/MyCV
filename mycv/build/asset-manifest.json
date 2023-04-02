@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b6dfce03.css",
+    "main.js": "/static/js/main.24aa03ee.js",
+    "static/media/Milleret_Guillaume.png": "/static/media/Milleret_Guillaume.89fd2a6c52693c0257f0.png",
+    "static/media/master.pdf": "/static/media/master.2db07733ffd2f6b733b2.pdf",
+    "static/media/lisa.png": "/static/media/lisa.cc799c544b669429b0b7.png",
+    "static/media/shiny.jpg": "/static/media/shiny.e8e986eaac6fd44cc7af.jpg",
+    "static/media/Let'sJazz-UnicaseFreebie.otf": "/static/media/Let'sJazz-UnicaseFreebie.a970d98641566ca10c66.otf",
+    "static/media/linkedin.svg": "/static/media/linkedin.d6b58f1ac2ecc8aa7abc7b069f53af8b.svg",
+    "static/media/github.svg": "/static/media/github.f25a1ef81e5a682bdb0d82f78eedd48f.svg",
+    "static/media/mail.svg": "/static/media/mail.0c0516d2c184c9e61d322e28d0d1a32e.svg",
+    "index.html": "/index.html",
+    "main.b6dfce03.css.map": "/static/css/main.b6dfce03.css.map",
+    "main.24aa03ee.js.map": "/static/js/main.24aa03ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6dfce03.css",
+    "static/js/main.24aa03ee.js"
+  ]
+}
