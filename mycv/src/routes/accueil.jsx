@@ -2,9 +2,9 @@ import Header from '../components/header';
 import Navbar from '../components/navbar';
 import Guillaume from '../assets/img/Milleret_Guillaume.png'
 
-export default function Home() {
+export default function Accueil() {
   return (
-    <>
+    <div>
       <Header />
           <Navbar />
               <main>
@@ -20,6 +20,6 @@ export default function Home() {
                     </div>
                 </div>
               </main>
-    </>
+    </div>
   );
 }

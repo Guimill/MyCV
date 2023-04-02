@@ -11,7 +11,7 @@ import Formation from './components/content/formation';
 import Realisations from './components/content/realisations';
 import Experiences from './components/content/experiences';
 import Competences from "./components/content/competences";
-import Home from './routes/home';
+import Accueil from './routes/accueil';
 
 const router = createBrowserRouter([
   {
@@ -39,8 +39,7 @@ const router = createBrowserRouter([
   },
   {
     path:"/accueil",
-    element: <Home />,
-    errorElement: <Error/>,
+    element: <Accueil />,
   }
 ]);
 
