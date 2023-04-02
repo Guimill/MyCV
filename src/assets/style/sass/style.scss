@@ -7,25 +7,25 @@ $third-color : rgb(227, 252, 255);
     src: url('../font/Let\'sJazz-UnicaseFreebie.otf') format("opentype");
 }
 
-html{
+html {
     height: 100vh;
     width: 100vw;
     scrollbar-width: none;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-  
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
 
-.banner{
+.banner {
     top: 0;
     position: sticky;
     width: 100vw;
@@ -34,40 +34,45 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    nav{
+
+    nav {
         display: flex;
-        flex-wrap: nowrap ;
+        flex-wrap: nowrap;
         width: 50vw;
-            h1{
+
+        h1 {
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 3vw;
+            font-family: "jazzy";
+        }
+
+        div {
+            height: inherit;
+            width: 10%;
+            margin-top: 3vh;
+
+            a {
                 display: flex;
-                flex-wrap: nowrap ;
-                font-size: 3vw;
-                font-family: "jazzy";
-            }
-            div{
-                height: inherit;
-                width: 10%;
-                margin-top: 10px;
-                a{
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+
+                img {
+                    margin-top: 0.5vh;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 5px;
-                    img {
-                        margin-top: 0.5vh;
-                        display: flex;
-                        flex-flow: column wrap;
-                        width: 30%;
-                        height: 50%;
-                        object-fit: fill;
-                        overflow: hidden;
-                    }
+                    flex-flow: column wrap;
+                    width: 30%;
+                    height: 50%;
+                    object-fit: fill;
+                    overflow: hidden;
                 }
             }
+        }
     }
 }
 
-.navbar{
+.navbar {
     border: solid 1px black;
     position: fixed;
     background-color: $primary-color;
@@ -75,7 +80,8 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
-    button{
+
+    button {
         background-color: $primary-color;
         color: black;
         font-family: "jazzy";
@@ -84,19 +90,22 @@ body{
         width: 15vw;
         height: 8vh;
         font-size: 3vh;
-        &:hover{
+
+        &:hover {
             background-color: darken($color: $primary-color, $amount: 10%);
         }
-        &:disabled{
+
+        &:disabled {
             background-color: darken($color: $primary-color, $amount: 15%);
         }
-        &:active{
+
+        &:active {
             box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
         }
     }
 }
 
-main{
+main {
     background-color: $third-color;
 }
 
@@ -121,7 +130,7 @@ main{
     border-radius: 15px 15px;
 }
 
-.paragraphe{
+.paragraphe {
     padding-top: 45vh;
     padding-bottom: 20vh;
     object-fit: cover;
@@ -137,21 +146,23 @@ main{
     align-items: center;
     font-family: 'jazzy';
     list-style: none;
-    &__topParagraphe{
+
+    &__topParagraphe {
         width: 50%;
         text-align: center;
-        color:rgb(244, 147, 147);
+        color: rgb(244, 147, 147);
         font-size: 4vh;
     }
-    &__bottomParagraphe{
-        color:rgb(125, 125, 196);
+
+    &__bottomParagraphe {
+        color: rgb(125, 125, 196);
         font-size: 2.5vh;
         text-align: center;
         width: 65%;
     }
 }
 
-.realisationParagraphe{
+.realisationParagraphe {
     padding-top: 45vh;
     padding-bottom: 20vh;
     object-fit: cover;
@@ -169,11 +180,12 @@ main{
     list-style: none;
 }
 
-.downloadHandler{
+.downloadHandler {
     margin-top: 20px;
     height: 64px;
     text-align: center;
-    &__downloadButton{
+
+    &__downloadButton {
         font-family: "jazzy";
         border: none;
         font-size: x-large;
@@ -181,28 +193,43 @@ main{
         margin-top: 5vh;
         background-color: $primary-color;
         color: $secondary-color;
-        &:active{
+
+        &:active {
             box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
         }
-        &:hover{
+
+        &:hover {
             background-color: darken($color: $primary-color, $amount: 10);
         }
     }
-} 
+}
 
-footer{
+footer {
     height: 100%;
     font-size: 2vh;
     font-family: "jazzy";
     background-color: $third-color;
     text-align: center;
-    hr{
+
+    hr {
         width: 20%;
         height: 1px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
-        background-color: $primary-color;
+        background-color: darken($color: $primary-color, $amount: 20);
         border: 0 none;
+    }
+
+    p {
+        color: darken($color: $primary-color, $amount: 20);
+    }
+
+    svg {
+        height: 30%;
+
+        g {
+            stroke: darken($color: $primary-color, $amount: 20);
+        }
     }
 }

@@ -16,8 +16,8 @@ import Accueil from './routes/accueil';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
-    errorElement: <Error/>,
+    element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         path: "formation",
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path:"/accueil",
+    path: "/accueil",
     element: <Accueil />,
   }
 ]);

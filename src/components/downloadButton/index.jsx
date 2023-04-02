@@ -1,8 +1,8 @@
 export default function DownloadButton({downloadLink, diplomeName, size}) {
 
    return (
-    <a class="downloadHandler" href={downloadLink} download>
-     <button class="downloadHandler__downloadButton">
+    <a className="downloadHandler" href={downloadLink} download>
+     <button className="downloadHandler__downloadButton">
        {diplomeName}
      </button>
    </a>

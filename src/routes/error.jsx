@@ -7,9 +7,9 @@ export default function Error() {
     console.error(error);
 
     return (
-    <>
-    <Header />
-        <Navbar />
+        <>
+            <Header />
+            <Navbar />
             <main>
                 <div className="paragraphe">
                     <h1>Oops!</h1>
@@ -17,6 +17,6 @@ export default function Error() {
                     <b>{error.statusText || error.message}</b>
                 </div>
             </main>
-    </>
-  );
+        </>
+    );
 }
