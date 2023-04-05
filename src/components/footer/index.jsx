@@ -1,5 +1,3 @@
-import mail from '../../assets/img/mail.svg'
-
 function Footer() {
 
   return (
