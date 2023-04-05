@@ -242,7 +242,7 @@ main {
         font-size: 4vh;
 
         @media screen and (max-width: map-get($breakpoints, XLmobile)) {
-            font-size: 2vh;
+            font-size: 2.5vh;
         }
 
     }
@@ -254,7 +254,7 @@ main {
         width: 65%;
 
         @media screen and (max-width: map-get($breakpoints, XLmobile)) {
-            font-size: 2vh;
+            font-size: 1.8vh;
         }
     }
 }
