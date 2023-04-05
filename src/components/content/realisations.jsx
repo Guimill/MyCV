@@ -1,5 +1,4 @@
-import lisa from '../../assets/img/lisa.png'
-import shiny from '../../assets/img/shiny.png'
+import { RealisationsData } from "../data/realisationsData";
 
 export default function Realisations() {
 
@@ -9,18 +8,16 @@ export default function Realisations() {
     color: 'rgb(244, 147, 147)',
   };
 
-    return (
-      <div>
-          <ul className="realisationParagraphe">
-            <li className="paragraphe__topParagraphe">
-              <a style={aStyle} href=" https://milleretg4progress.shinyapps.io/shinyapps/" target={"blank"}><img style={{height: "30vh", width: "300px"}} src={shiny} alt="My simpsons voting app" />
-              <p><b>Synthetiseur de fonctionnalitees des Zones Humides</b></p></a>
-            </li>
-            <li className="paragraphe__topParagraphe">
-              <a style={aStyle} href="https://the-simpsons-politiscales.fr/" target={"blank"}><img style={{height: "30vh"}} src={lisa} alt="My shiny app" />
-              <p><b>The Simpsons PolitiScale</b></p></a>
-            </li>
-          </ul>
-      </div>
-    );
-  }
+  return (
+    <div>
+      {RealisationsData.map(({ id, src, caption, href }) => (
+        <ul className="paragraphe" key={id}>
+          <li className="paragraphe__topParagraphe">
+            <a style={aStyle} href={ href } target={"blank"}><img style={{ height: "30vh", width: "auto" }} src={ src } alt={ caption } />
+              <p><b>{ caption }</b></p></a>
+          </li>
+        </ul>
+      ))}
+    </div>
+  );
+}

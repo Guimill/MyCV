@@ -209,26 +209,6 @@ main {
   width: 65%;
 }
 
-.realisationParagraphe {
-  padding-top: 45vh;
-  padding-bottom: 20vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  color: black;
-  -o-object-position: center;
-     object-position: center;
-  width: 100%;
-  height: 30vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  font-family: "jazzy";
-  list-style: none;
-}
-
 .downloadHandler {
   margin-top: 20px;
   height: 64px;
