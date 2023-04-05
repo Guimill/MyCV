@@ -1,7 +1,9 @@
 import { FormationData } from "../data/formationData"
-import DownloadButton from "../downloadButton";
+/* import DownloadButton from "../downloadButton"; */
 
 export default function Formation() {
+
+  /* <li><DownloadButton downloadLink={downloadLink} diplomeName={diplomeName} /></li> */
 
   return (
     <div>
@@ -10,7 +12,6 @@ export default function Formation() {
           <li className="paragraphe__topParagraphe">{diplome} - {dateAdmission} - {ville}</li>
           <li className="paragraphe__bottomParagraphe">{specialisation} {intitule}</li>
           <li>{projets}</li>
-          <li><DownloadButton downloadLink={downloadLink} diplomeName={diplomeName} /></li>
         </ul>
       ))}
     </div>

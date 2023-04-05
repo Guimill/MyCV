@@ -33,18 +33,43 @@ body {
 .banner nav {
   display: flex;
   flex-wrap: nowrap;
-  width: 50vw;
+  width: 60vw;
 }
 .banner nav h1 {
   display: flex;
   flex-wrap: nowrap;
-  font-size: 3vw;
   font-family: "jazzy";
+}
+@media screen and (max-width: 600px) {
+  .banner nav h1 {
+    font-size: 6vw;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+  .banner nav h1 {
+    font-size: 5vw;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1460px) {
+  .banner nav h1 {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 1460px) and (max-width: 1920px) {
+  .banner nav h1 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .banner nav h1 {
+    font-size: 3vw;
+  }
 }
 .banner nav div {
   height: inherit;
-  width: 10%;
-  margin-top: 3vh;
+  width: 150px;
 }
 .banner nav div a {
   display: flex;
@@ -71,6 +96,7 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .navbar button {
   background-color: rgb(244, 147, 147);
@@ -78,9 +104,43 @@ body {
   font-family: "jazzy";
   font-weight: bold;
   border-style: none;
-  width: 15vw;
-  height: 8vh;
-  font-size: 3vh;
+}
+@media screen and (max-width: 1080px) {
+  .navbar button {
+    margin: 2vw;
+    width: 100%;
+    height: 8vh;
+    font-size: 2vh;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1460px) {
+  .navbar button {
+    margin-right: 4vw;
+    width: 15rem;
+    height: 8vh;
+    font-size: 3vh;
+  }
+}
+@media screen and (min-width: 1460px) and (max-width: 1920px) {
+  .navbar button {
+    width: 15vw;
+    height: 8vh;
+    font-size: 3vh;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .navbar button {
+    width: 15vw;
+    height: 8vh;
+    font-size: 3vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar button {
+    width: 90%;
+    height: 8vh;
+    font-size: 1.5vh;
+  }
 }
 .navbar button:hover {
   background-color: #ef6565;
