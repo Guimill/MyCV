@@ -39,6 +39,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   font-family: "jazzy";
+  color: #362626;
 }
 @media screen and (max-width: 600px) {
   .banner nav h1 {
@@ -89,7 +90,7 @@ body {
 }
 
 .navbar {
-  border: solid 1px black;
+  border: solid 1px #362626;
   position: fixed;
   background-color: rgb(244, 147, 147);
   height: 8vh;
@@ -100,7 +101,7 @@ body {
 }
 .navbar button {
   background-color: rgb(244, 147, 147);
-  color: black;
+  color: #362626;
   font-family: "jazzy";
   font-weight: bold;
   border-style: none;
@@ -148,9 +149,6 @@ body {
 .navbar button:disabled {
   background-color: #ed4e4e;
 }
-.navbar button:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-}
 
 main {
   background-color: rgb(227, 252, 255);
@@ -171,7 +169,7 @@ main {
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  border: solid 1px black;
+  border: solid 1px #362626;
   height: 1.5vh;
   background: #04AA6D;
   border-radius: 15px 15px;
@@ -182,7 +180,7 @@ main {
   padding-bottom: 20vh;
   -o-object-fit: cover;
      object-fit: cover;
-  color: black;
+  color: #362626;
   -o-object-position: center;
      object-position: center;
   width: 100%;
@@ -264,4 +262,47 @@ footer svg {
 }
 footer svg g {
   stroke: #eb3636;
+}
+
+.paragrapheAccueil {
+  padding-top: 45vh;
+  padding-bottom: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: #362626;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 30vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "jazzy";
+  list-style: none;
+}
+.paragrapheAccueil img {
+  width: 21vw;
+}
+.paragrapheAccueil p {
+  font-size: 3vh;
+  width: 60%;
+  text-align: start;
+  margin-left: 4vw;
+  color: rgb(244, 147, 147);
+}
+@media screen and (max-width: 1080px) {
+  .paragrapheAccueil {
+    flex-flow: column nowrap;
+  }
+  .paragrapheAccueil img {
+    width: 40vw;
+    margin-bottom: 4vh;
+  }
+  .paragrapheAccueil p {
+    font-size: 1.5vh;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

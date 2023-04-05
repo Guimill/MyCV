@@ -6,7 +6,7 @@ export default function Header() {
 
     const linkStyle = {
         textDecoration: "none",
-        color: "black"
+        color: "$fourth-color"
       };
 
     return (

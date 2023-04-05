@@ -1,6 +1,7 @@
 $primary-color : rgb(244, 147, 147);
 $secondary-color : #f6f8fa;
 $third-color : rgb(227, 252, 255);
+$fourth-color: #362626;
 
 $breakpoints: (L: 1920px,
     M: 1460px,
@@ -133,6 +134,7 @@ body {
             flex-wrap: nowrap;
             font-family: "jazzy";
             @include TittleMediaQ();
+            color: $fourth-color;
         }
 
         div {
@@ -161,7 +163,7 @@ body {
 }
 
 .navbar {
-    border: solid 1px black;
+    border: solid 1px $fourth-color;
     position: fixed;
     background-color: $primary-color;
     height: 8vh;
@@ -172,7 +174,7 @@ body {
 
     button {
         background-color: $primary-color;
-        color: black;
+        color: $fourth-color;
         font-family: "jazzy";
         font-weight: bold;
         border-style: none;
@@ -185,10 +187,6 @@ body {
 
         &:disabled {
             background-color: darken($color: $primary-color, $amount: 15%);
-        }
-
-        &:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
         }
     }
 }
@@ -212,7 +210,7 @@ main {
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-    border: solid 1px black;
+    border: solid 1px $fourth-color;
     height: 1.5vh;
     background: #04AA6D;
     border-radius: 15px 15px;
@@ -222,7 +220,7 @@ main {
     padding-top: 45vh;
     padding-bottom: 20vh;
     object-fit: cover;
-    color: black;
+    color: $fourth-color;
     object-position: center;
     width: 100%;
     height: 30vh;
@@ -309,6 +307,50 @@ footer {
 
         g {
             stroke: darken($color: $primary-color, $amount: 20);
+        }
+    }
+}
+
+.paragrapheAccueil {
+    padding-top: 45vh;
+    padding-bottom: 20vh;
+    object-fit: cover;
+    color: $fourth-color;
+    object-position: center;
+    width: 100%;
+    height: 30vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'jazzy';
+    list-style: none;
+
+    img {
+        width: 21vw;
+    }
+
+    p {
+        font-size: 3vh;
+        width: 60%;
+        text-align: start;
+        margin-left: 4vw;
+        color: $primary-color;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, S)) {
+        flex-flow: column nowrap;
+
+        img {
+            width: 40vw;
+            margin-bottom: 4vh;
+        }
+
+        p {
+            font-size: 1.5vh;
+            text-align: center;
         }
     }
 }
