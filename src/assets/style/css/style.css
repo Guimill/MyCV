@@ -202,11 +202,21 @@ main {
   color: rgb(244, 147, 147);
   font-size: 4vh;
 }
+@media screen and (max-width: 600px) {
+  .paragraphe__topParagraphe {
+    font-size: 2vh;
+  }
+}
 .paragraphe__bottomParagraphe {
   color: rgb(125, 125, 196);
   font-size: 2.5vh;
   text-align: center;
   width: 65%;
+}
+@media screen and (max-width: 600px) {
+  .paragraphe__bottomParagraphe {
+    font-size: 2vh;
+  }
 }
 
 .downloadHandler {
