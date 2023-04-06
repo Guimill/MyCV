@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prefix": "postcss ./src/assets/style/css/style.css --use autoprefixer -d ./public/prefixed/"
   },
   "eslintConfig": {
     "extends": [
@@ -36,9 +37,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 4 chrome version",
+      "last 4 firefox version",
+      "last 4 safari version"
     ]
   }
 }
