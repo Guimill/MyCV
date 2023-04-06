@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer className="footer">
       <hr />
-      <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", marginRight: "3vw" }}>
+      <div>
         <a href="mailto:guillaume.milleret@gmail.com">
           <svg width="132.26" height="101.68" viewBox="0 0 34.993 26.903" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" stroke="#000" stroke-width="7.501">

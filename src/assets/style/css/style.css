@@ -35,6 +35,11 @@ body {
   flex-wrap: nowrap;
   width: 60vw;
 }
+@media screen and (max-width: 600px) {
+  .banner nav {
+    width: 100vw;
+  }
+}
 .banner nav h1 {
   display: flex;
   flex-wrap: nowrap;
@@ -71,6 +76,11 @@ body {
 .banner nav div {
   height: inherit;
   width: 150px;
+}
+@media screen and (max-width: 600px) {
+  .banner nav div {
+    width: 80px;
+  }
 }
 .banner nav div a {
   display: flex;
@@ -240,27 +250,45 @@ main {
 
 footer {
   height: 100%;
-  font-size: 2vh;
-  font-family: "jazzy";
   background-color: rgb(227, 252, 255);
-  text-align: center;
 }
 footer hr {
   width: 20%;
   height: 1px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5px;
   background-color: #eb3636;
   border: 0 none;
 }
-footer p {
+@media screen and (max-width: 600px) {
+  footer hr {
+    width: 45%;
+  }
+}
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+footer div p {
   color: #eb3636;
+  font-size: 2vh;
+  font-family: "jazzy";
+  text-align: center;
 }
-footer svg {
-  height: 30%;
+footer div a {
+  width: 50px;
+  height: 50px;
+  margin-right: 2vw;
+  margin-top: 10px;
 }
-footer svg g {
+footer div a svg {
+  max-height: 75%;
+  max-width: 75%;
+}
+footer div a svg g {
   stroke: #eb3636;
 }
 
