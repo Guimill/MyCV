@@ -236,6 +236,7 @@ main {
     height: 30vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    scroll-behavior: smooth;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;

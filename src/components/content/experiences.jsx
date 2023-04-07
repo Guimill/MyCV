@@ -1,8 +1,11 @@
 import { ExperienceData } from "../data/experienceData";
+import Sidebar from "../sidebar";
 
 export default function Experiences() {
 
   return (
+    <>
+    <Sidebar />
     <div>
       {ExperienceData.map(({ nom, duree, intitule, ville, poste, id }) => (
         <ul className="paragraphe" key={id}>
@@ -11,5 +14,6 @@ export default function Experiences() {
         </ul>
       ))}
     </div>
+    </>
   );
 }

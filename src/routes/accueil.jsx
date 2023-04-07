@@ -1,13 +1,8 @@
-import Header from '../components/header';
-import Navbar from '../components/navbar';
 import Guillaume from '../assets/img/Milleret_Guillaume.png';
-import Footer from '../components/footer';
 
 export default function Accueil() {
   return (
     <div>
-      <Header />
-      <Navbar />
       <main className='paragrapheAccueil'>
           <img src={Guillaume} alt="Ma personne" />
           <p>
@@ -17,7 +12,6 @@ export default function Accueil() {
             native et web
           </p>
       </main>
-      <Footer />
     </div>
   );
 }

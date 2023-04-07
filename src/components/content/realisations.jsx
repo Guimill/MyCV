@@ -1,4 +1,5 @@
 import { RealisationsData } from "../data/realisationsData";
+import Sidebar from "../sidebar";
 
 export default function Realisations() {
 
@@ -9,6 +10,8 @@ export default function Realisations() {
   };
 
   return (
+    <>
+    <Sidebar />
     <div>
       {RealisationsData.map(({ id, src, caption, href }) => (
         <ul className="paragraphe" key={id}>
@@ -19,5 +22,6 @@ export default function Realisations() {
         </ul>
       ))}
     </div>
+    </>
   );
 }

@@ -19,6 +19,9 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <Error />,
     children: [
+      { index: true,
+        element: <Accueil />
+      },
       {
         path: "formation",
         element: <Formation />,
@@ -34,12 +37,8 @@ const router = createBrowserRouter([
       {
         path: "competences",
         element: <Competences />,
-      }
+      },
     ]
-  },
-  {
-    path: "/accueil",
-    element: <Accueil />,
   }
 ]);
 
