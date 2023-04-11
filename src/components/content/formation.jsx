@@ -15,7 +15,7 @@ export default function Formation() {
           <ul className="paragraphe" key={id}>
             <li className="paragraphe__topParagraphe">{diplome} - {dateAdmission} - {ville}</li>
             <li className="paragraphe__bottomParagraphe">{specialisation} {intitule}</li>
-            <li style={{color:"burlywood"}}><b>{projets}</b></li>
+            <li style={{color:"burlywood", fontSize:"2vh", width:"50%", textAlign:"center"}}><b>{projets}</b></li>
           </ul>
         ))}
       </div>

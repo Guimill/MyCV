@@ -3,11 +3,11 @@ import master from '../../assets/diplome/master.pdf'
 export const FormationData = [
   {
     "id": 1,
-    "diplome": "Developpeur d'application JS React",
+    "diplome": "Developpeur d'application",
     "ville": "Nantes",
     "intitule": "",
     "dateAdmission": "2023 - En cours",
-    "specialisation": "",
+    "specialisation": "Javascript React",
     "projets": "Algorythmique en JS / React Redux et utilisation d'API REST / Responsiveness et accessibilite du web / Production de CdC / gestion de projet Agile",
     "downloadLink": "",
     "diplomeName": "Diplome de niveau 6",
