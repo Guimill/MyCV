@@ -6,10 +6,7 @@ export default function Accueil() {
       <main className='paragrapheAccueil'>
           <img src={Guillaume} alt="Ma personne" />
           <p>
-            Je suis un ecologue et geographe qui cherche a developper des outils
-            d'aide a la decision dans l'urbanisme, dans la gestion des espaces riches en biodiversite et grand paysage.
-            Le tout en usant de technologies repandu et inclusives, c'est pourquoi je veux mettre mon expertise dans des applications
-            native et web
+          Je suis un écologue et géographe qui cherche à développer des outils d'aide à la décision dans l'urbanisme, la gestion d'espaces paysagers et/ou riches en biodiversité. Le tout en usant de technologies répandues et inclusives. C'est pourquoi je veux mettre mon expertise dans des applications native et web
           </p>
       </main>
     </div>
