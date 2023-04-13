@@ -60,17 +60,5 @@ export const FormationData = [
     "downloadLink": "",
     "diplomeName": "Licence",
     "size": ""
-  },
-  {
-    "id": 6,
-    "diplome": "Bac Scientifique",
-    "ville": "Miramas",
-    "intitule": "",
-    "dateAdmission": "2014",
-    "specialisation": "SVT & Option histoire geographie",
-    "projets": "",
-    "downloadLink": "",
-    "diplomeName": "Bac",
-    "size": ""
   }
 ]
