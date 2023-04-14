@@ -19,7 +19,7 @@ export const RealisationsData = [
     {
         "id": 3,
         "src": MPC,
-        "caption": "Mon petit coton",
+        "caption": "Mon petit coton - En cours",
         "href": "https://mon-petit-coton.netlify.app/gallery"
     },
     {
