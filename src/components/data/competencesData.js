@@ -2,7 +2,7 @@ export const CompetenceData = [
     {
         "id": 1,
         "nom": "FrontEnd" ,
-        "outils": "Html CSS JS React R shiny Django Wagtail"
+        "outils": "Html CSS JS React R shiny Django Wagtail git github github desktop"
     },
     {
         "id": 2,
@@ -12,12 +12,12 @@ export const CompetenceData = [
     {
         "id": 3,
         "nom": "Statistique" ,
-        "outils": "R Rstudio Python Pandas"
+        "outils": "R Shiny Rstudio Python Pandas"
     },
     {
         "id": 4,
         "nom": "Geomatique" ,
-        "outils": "QGIS ArcGis OSM Geoportail Earthdata & divers MapMaker"
+        "outils": "R Leaflet QGIS ArcGis OSM Geoportail Earthdata & divers MapMaker"
     },
     {
         "id": 5,
