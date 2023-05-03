@@ -8,7 +8,7 @@ export const RealisationsData = [
     {
         "id": 1,
         "src": ShinyLeaflet,
-        "caption": "Cartographie des la population française par département en 2023",
+        "caption": "Cartographie de la population française par département en 2023",
         "href": "https://milleretg4progress.shinyapps.io/R-leaflet-Fr-pop-data/"
     },
     {
