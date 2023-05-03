@@ -2,7 +2,7 @@ import lisa from '../../assets/img/lisa.png';
 import shinyZH from '../../assets/img/shiny.png';
 import MPC from '../../assets/img/isla_500x500.54939114_c40i6j8i.webp';
 import OldCV from '../../assets/img/oldcv.jpeg'
-import ShinyLeaflet from '../../assets/img/shinyLeaflet'
+import ShinyLeaflet from '../../assets/img/shinyLeaflet.png'
 
 export const RealisationsData = [
     {
