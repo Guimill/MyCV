@@ -2,7 +2,7 @@ export const CompetenceData = [
     {
         "id": 1,
         "nom": "FrontEnd" ,
-        "outils": "Html CSS JS React R shiny Django Wagtail git github github desktop"
+        "outils": "Html CSS JS React R shiny Django Wagtail git github Streamlit Flask"
     },
     {
         "id": 2,
@@ -22,6 +22,6 @@ export const CompetenceData = [
     {
         "id": 5,
         "nom": "Langues" ,
-        "outils": "Anglais C1 italien B1 notion de chinois, arabe et russe"
+        "outils": "Anglais C1 italien B1 espagnol B1 notion de chinois, breton et russe"
     },
 ]
