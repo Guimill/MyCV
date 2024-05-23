@@ -3,18 +3,6 @@ import master from '../../assets/diplome/master.pdf'
 export const FormationData = [
   {
     "id": 1,
-    "diplome": "Developpeur d'application",
-    "ville": "Nantes",
-    "intitule": "",
-    "dateAdmission": "2023 - En cours",
-    "specialisation": "Javascript React",
-    "projets": "Algorythmique en JS / React Redux et utilisation d'API REST / Responsiveness et accessibilite du web / Production de CdC / gestion de projet Agile",
-    "downloadLink": "",
-    "diplomeName": "Diplome de niveau 6",
-    "size": ""
-  },
-  {
-    "id": 2,
     "diplome": "Master Geographie Amenagement Environnement Developpement",
     "ville": "Angers",
     "intitule": "",
@@ -22,11 +10,11 @@ export const FormationData = [
     "specialisation": "Ecologie et eco-ingenierie des zones humides",
     "projets": "",
     "downloadLink": master,
-    "diplomeName": "Master GAED",
+    "diplomeName": "Master GAED et BEE",
     "size": ""
   },
   {
-    "id": 3,
+    "id": 2,
     "diplome": "Maitrise Biologie Ecologie et Evolution",
     "ville": "Poitiers",
     "intitule": "",
@@ -38,7 +26,7 @@ export const FormationData = [
     "size": ""
   },
   {
-    "id": 4,
+    "id": 3,
     "diplome": "Maitrise Geographie Amenagement Environnement Developpement",
     "ville": "Poitiers",
     "intitule": "",
@@ -50,7 +38,7 @@ export const FormationData = [
     "size": ""
   },
   {
-    "id": 5,
+    "id": 4,
     "diplome": "Licence Biologie des Organismes, des Populations et Environnement",
     "ville": "Toulouse",
     "intitule": "",
