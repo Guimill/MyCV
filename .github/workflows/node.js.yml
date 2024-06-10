@@ -30,22 +30,7 @@ jobs:
     - name: Build project
       run: npm run build --if-present
 
-    - name: Archive build files
-      if: success()
-      run: tar -czf build.tar.gz ./build
-
-    - name: Transfer build files to server
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.SERVER_HOST }}
-        username: ${{ secrets.SERVER_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: ${{ secrets.SERVER_PORT }}
-        source: "./build.tar.gz"
-        target: "/home/node-apps/MyCV/"
-
     - name: Deploy to Linux server
-      if: github.ref == 'refs/heads/main'
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SERVER_HOST }}
@@ -53,8 +38,9 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SERVER_PORT }}
         script: |
+          sudo apt-get update
           cd /home/node-apps/MyCV/
-          tar -xzf build.tar.gz
-          rm build.tar.gz
+          git fetch origin main
+          git reset --hard origin/main
           npm ci
-          pm2 restart my-app  # Adjust this as per your process manager and app name
+          npm run build
