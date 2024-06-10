@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
     - name: Checkout code
@@ -31,9 +31,24 @@ jobs:
       run: npm run build --if-present
 
     - name: Run tests
-      run: npm test -- --passWithNoTests
+      run: npm test
+
+    - name: Archive build files
+      if: success()
+      run: tar -czf build.tar.gz ./build
+
+    - name: Transfer build files to server
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SERVER_PORT }}
+        source: "./build.tar.gz"
+        target: "/home/node-apps/MyCV/"
 
     - name: Deploy to Linux server
+      if: github.ref == 'refs/heads/main'
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SERVER_HOST }}
@@ -41,19 +56,8 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SERVER_PORT }}
         script: |
-          sudo apt-get update
-          if [ ! -d "/home/node-apps/MyCV/" ]; then
-            mkdir -p /home/node-apps/MyCV/
-            cd /home/node-apps/MyCV/
-            git init
-          else
-            cd /home/node-apps/MyCV/
-          fi
-          git fetch origin main
-          git reset --hard origin/main
-          if [ ! -f "package.json" ]; then
-            echo "package.json not found!"
-            exit 1
-          fi
+          cd /home/node-apps/MyCV/
+          tar -xzf build.tar.gz
+          rm build.tar.gz
           npm ci
-          npm run build
+          pm2 restart my-app  # Adjust this as per your process manager and app name
