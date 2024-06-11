@@ -15,7 +15,7 @@ import Accueil from './routes/accueil';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/MyCv/",
     element: <Root />,
     errorElement: <Error />,
     children: [
