@@ -28,7 +28,7 @@ jobs:
       run: npm ci
 
     - name: Ensure html-webpack-plugin is installed
-      run: npm install --save-dev html-webpack-plugin@2.28.0
+      run: npm install --save-dev html-webpack-plugin
       
     - name: Build project
       run: npm run build --if-present
