@@ -47,4 +47,4 @@ jobs:
           git reset --hard origin/main
           npm ci
           npm run build
-          cp -R build/* /var/www/build/
+          cp -R build/* /var/www/MyCV/build/
