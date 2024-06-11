@@ -15,29 +15,15 @@ import Accueil from './routes/accueil';
 
 const router = createBrowserRouter([
   {
-    path: "/MyCv/",
+    path: "/MyCV/",
     element: <Root />,
     errorElement: <Error />,
     children: [
-      { index: true,
-        element: <Accueil />
-      },
-      {
-        path: "formation",
-        element: <Formation />,
-      },
-      {
-        path: "realisations",
-        element: <Realisations />,
-      },
-      {
-        path: "experiences",
-        element: <Experiences />,
-      },
-      {
-        path: "competences",
-        element: <Competences />,
-      },
+      { index: true, element: <Accueil /> },
+      { path: "formation", element: <Formation /> },
+      { path: "realisations", element: <Realisations /> },
+      { path: "experiences", element: <Experiences /> },
+      { path: "competences", element: <Competences /> },
     ]
   }
 ]);
