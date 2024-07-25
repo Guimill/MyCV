@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+
+  mycv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    networks:
+      -mynetwork
+
+network:
+  mynetwork:
+    external: true
+  
