@@ -9,7 +9,7 @@ services:
     networks:
       - mynetwork
 
-network:
+networks:
   mynetwork:
     external: true
   
